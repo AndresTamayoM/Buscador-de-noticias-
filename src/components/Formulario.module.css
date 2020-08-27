@@ -1,0 +1,25 @@
+.heading {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.buscador {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+/*
+si lo queremos dejar asi: 
+.btn-block {
+    width: 100%;
+}
+
+En Formulario.js seria asi:
+className={`${styles['btn-block]} btn-large amber darken-2`}
+*/
+.btn_block {
+    width: 100%;
+}
