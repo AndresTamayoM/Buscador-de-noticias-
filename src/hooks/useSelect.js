@@ -3,13 +3,17 @@ import React, { useState } from 'react';
 const useSelect = (stateInicical, opciones) => {
 
     // State del custom hook
-    const [ state, actualizarState] = useState('');
+    const [ state, actualizarState] = useState(stateInicical);
 
     const SelectNoticias =() => (
         <select 
-        className="browser-default"
+            className="browser-default"
+            value={state}
+            onChange={ e => actualizarState(e.target.value)}
         >
-            <option value="">Seleccione</option>
+            {opciones.map(opcion =>(
+                <option key={opcion.value} value={opcion.values}>{opcion.label}</option>
+            ))}
         </select>
     );
 
